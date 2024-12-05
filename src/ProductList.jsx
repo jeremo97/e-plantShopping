@@ -324,6 +324,8 @@ const handlePlantsClick = (e) => {
                                     <div className="product-card" key={plantIndex}>
                                         <img className="product-image" src={plant.image} alt={plant.name} />
                                         <div className="product-title">{plant.name}</div>
+                                        <div className="product-cost" style={{ color: 'red', fontWeight: 'bold'}}>{plant.cost}</div>
+                                        <div className="product-description">{plant.description}</div>
                                         {}
                                         <button className="product-button" onClick={() => handleAddToCart(plant)}
                                            disabled={!!addedToCart[plant.name]}  
